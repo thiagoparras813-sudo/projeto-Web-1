@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres para aceitar acentos e ç -->
+    <meta charset="UTF-8">
+    <!-- Ajusta a visualização para telas de celulares e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checagem de Fatos - Educação Inclusiva</title>
+    <!-- Conecta o arquivo HTML ao arquivo CSS externo -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- A tag <header> representa o cabeçalho da página/seção -->
+    <header class="cabecalho">
+        <h1>Verificação de Fatos</h1>
+        <p>Mitos e Verdades sobre a Educação Inclusiva</p>
+    </header>
+
+    <!-- A tag <main> indica o conteúdo principal da página -->
+    <main>
+        <!-- A tag <section> agrupa conteúdos relacionados (nossa seção de Destaques) -->
+        <section class="destaques">
+
+            <!-- Item 1 -->
+            <!-- A tag <article> representa um conteúdo autônomo/independente -->
+            <article class="cartao" onclick="revelarResposta(this)">
+                <!-- <header> interno do cartão para organizar o título/afirmação -->
+                <header class="cartao-cabecalho">
+                    <h2>Afirmação 1</h2>
+                    <p class="pergunta">"A inclusão beneficia apenas os estudantes com deficiência."</p>
+                </header>
+                <!-- A tag <div> é um contêiner genérico para agrupar elementos visualmente -->
+                <div class="resposta oculta">
+                    <!-- <span> é usado para aplicar estilo a pequenas partes do texto -->
+                    <span class="tag mito">MITO</span>
+                    <p class="explicacao">A educação inclusiva desenvolve empatia, cooperação e novas metodologias que beneficiam toda a turma.</p>
+                </div>
+                <!-- Botão simples para dar uma dica visual de interatividade aos estudantes -->
+                <button class="btn-revelar">Clique para checar</button>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="cartao" onclick="revelarResposta(this)">
+                <header class="cartao-cabecalho">
+                    <h2>Afirmação 2</h2>
+                    <p class="pergunta">"Inclusão exige adaptar métodos e materiais para cada necessidade."</p>
+                </header>
+                <div class="resposta oculta">
+                    <span class="tag verdade">VERDADE</span>
+                    <p class="explicacao">Garantir acessibilidade significa oferecer diferentes formas de aprender e participar do conteúdo.</p>
+                </div>
+                <button class="btn-revelar">Clique para checar</button>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="cartao" onclick="revelarResposta(this)">
+                <header class="cartao-cabecalho">
+                    <h2>Afirmação 3</h2>
+                    <p class="pergunta">"Escolas regulares não precisam se preparar para receber todos os alunos."</p>
+                </header>
+                <div class="resposta oculta">
+                    <span class="tag mito">MITO</span>
+                    <p class="explicacao">A inclusão é um direito garantido por lei, e as escolas devem se estruturar e capacitar suas equipes.</p>
+                </div>
+                <button class="btn-revelar">Clique para checar</button>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- A tag <script> conecta o JavaScript externo à página HTML -->
+    <script src="script.js"></script>
+</body>
+</html>
